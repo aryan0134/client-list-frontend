@@ -1,0 +1,382 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root::-webkit-scrollbar{
+  display: none;
+}
+
+/* Navbar */
+
+.header{
+  height: 20vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo{
+  height: 95%;
+  width: 40%;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0.5%;
+}
+
+.tci-logo{
+  height: 100%;
+  width: 25%;
+  /* border: 1px solid green; */
+}
+
+.tci-logo img{
+  height: 100%;
+  width: 100%;
+}
+
+.towncentre-logo{
+  height: 100%;
+  width: 70%;
+  /* border: 1px solid greenyellow; */
+}
+
+.towncentre-logo img{
+  height: 100%;
+  width: 100%;
+}
+
+.header-tabs{
+  height: 60%;
+  width: 40%;
+  /* border: 1px solid white; */
+  margin-right: 0.5%;
+}
+
+.header-tabs ul{
+  height: 100%;
+  margin: 0;
+  /* border: 1px solid green; */
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-tabs ul a{
+  background-color: silver;
+  font-family: 'Poppins';
+  height: 45%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  color: black;
+  box-shadow: 7px 7px 1px white;
+}
+
+.header-tabs ul a:hover{
+  box-shadow: 7px 7px 1px silver;
+  background-color: white;
+  transition: 1s;
+}
+
+/* HomePage */
+.home-main::-webkit-scrollbar{
+  display: none;
+}
+
+.home-main{
+  height: 563px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+.home-welcome{
+  height: 15%;
+  width: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.welcome{
+  width: 30%;
+  margin-left: 0.5%;
+  /* border: 1px solid yellow; */
+}
+.welcome h1{
+  font-style: italic;
+  font-family: Poppins;
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5vw;
+  /* text-shadow: 10px 10px 1px black; */
+}
+.add-new-client{
+  height: 60%;
+  width: 20%;
+  margin-right: 2.5%;
+  /* border: 1px solid yellow; */
+  cursor: pointer;
+}
+.add-new-client img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.add-new-client img:hover{
+  opacity: 0.8;
+}
+
+.clients-table-heading{
+  min-height: 10%;
+  width: 98%;
+  /* border: 1px solid red; */
+  background: linear-gradient(to right , #f953c6,#b91d73);
+  box-shadow: 10px 10px 5px black;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.head1{
+  height: 100%;
+  width: 14.28%;
+  border-right: 2px solid silver;
+  /* margin-left: 0.5%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head1 h1{
+  margin:0;
+  font-size: 2.1vw;
+  font-family: 'Poppins';
+  font-weight:600;
+}
+.last{
+  border-right: none !important;
+}
+
+.clients-todo{
+  min-height: 60%;
+  width: 98%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  flex: 1;
+}
+.clients-todo-heading{
+  height: 20%;
+  width: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+.clients-todo-heading h1{
+  width: 50%;
+  font-style: italic;
+  font-family: Poppins;
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5vw;
+}
+.clients-container{
+  height: 80%;
+  width: 100%;
+  /* border: 1px solid red; */
+  overflow: scroll;
+}
+.clients-container::-webkit-scrollbar{
+  display: none;
+}
+.clients-content-heading{
+  height: 15%;
+  width: 100%;
+  /* border: 1px solid red; */
+  background: linear-gradient(to right , #22c1c3,#fdbb2d);
+  box-shadow: 10px 10px 5px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  /* cursor: pointer; */
+}
+.head2{
+  height: 100%;
+  width: 14.28%;
+  border-right: 2px solid silver;
+  /* margin-left: 0.5%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head2 h1{
+  margin:0;
+  font-size: 1.5vw;
+  font-family: 'Poppins';
+  font-weight:600;
+}
+.enjoy{
+  cursor: pointer;
+}
+.head2 select{
+  height: 70%;
+  width: 80%;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.5vw;
+  border: 2px solid black;
+}
+
+/* Clients Form */
+
+.client-form-main{
+  height: 590px;
+  width: 100vw;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+  overflow: scroll;
+}
+.client-form-main::-webkit-scrollbar{
+  display: none;
+}
+.client-form-main form{
+  height: 563px;
+  width: 90vw;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  background-color: silver;
+}
+.form-heading{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-heading h1{
+  font-family: 'Poppins';
+  font-size: 1.8vw;
+  height: 80%;
+  font-weight: 600;
+}
+.part1{
+  width: 100%;
+  min-height: 100px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: #F5F5F5;
+}
+.common{
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  
+
+}
+.common label{
+  margin-bottom: 10px;
+}
+.textarea1{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.textarea1 label{
+  margin-bottom: 15px;
+}
+.part2{
+  min-height: 200px;
+  justify-content: center;
+}
+.lasting{
+  /* margin-bottom: 0; */
+}
+
+form label{
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: Helvetica;
+}
+form input{
+  height: 30px;
+  background-color: black;
+  color: silver;
+  font-size: 1.5vw;
+  border: 4px solid silver;
+}
+form select{
+  height: 35px;
+  background-color: black;
+  color: silver;
+  font-size: 1.5vw;
+  border: 4px solid silver;
+}
+form textarea{
+  height: 80px;
+  background-color: black;
+  color: silver;
+  font-size: 1.5vw;
+  border: 4px solid silver;
+}
+.submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button{
+  min-height: 40px;
+  width: 20%;
+  font-size: 2vw;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-color: black;
+  color: silver;
+  border: 4px solid silver;
+}
