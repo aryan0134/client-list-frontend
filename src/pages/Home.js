@@ -108,7 +108,7 @@ function Home() {
                 <div className='head2'><h1>{arrow.lastName}</h1></div>
                 <div className='head2'><h1>{arrow.dob}</h1></div>
                 <div className='head2'><h1>{arrow.sex}</h1></div>
-                <div className='head2'><h1>{arrow.office}</h1></div>
+                <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
                 <div className='head2 last'>
                   <select
@@ -135,7 +135,7 @@ function Home() {
                 <div className='head2'><h1>{arrow.lastName}</h1></div>
                 <div className='head2'><h1>{arrow.dob}</h1></div>
                 <div className='head2'><h1>{arrow.sex}</h1></div>
-                <div className='head2'><h1>{arrow.office}</h1></div>
+                <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
                 <div className='head2 last'>
                   <select
@@ -162,7 +162,7 @@ function Home() {
                 <div className='head2'><h1>{arrow.lastName}</h1></div>
                 <div className='head2'><h1>{arrow.dob}</h1></div>
                 <div className='head2'><h1>{arrow.sex}</h1></div>
-                <div className='head2'><h1>{arrow.office}</h1></div>
+                <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
                 <div className='head2 last'>
                   <select
@@ -189,7 +189,7 @@ function Home() {
                 <div className='head2'><h1>{arrow.lastName}</h1></div>
                 <div className='head2'><h1>{arrow.dob}</h1></div>
                 <div className='head2'><h1>{arrow.sex}</h1></div>
-                <div className='head2'><h1>{arrow.office}</h1></div>
+                <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
                 <div className='head2 last'>
                   <select

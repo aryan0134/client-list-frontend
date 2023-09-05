@@ -265,6 +265,10 @@ code {
   border: 2px solid black;
 }
 
+.head3 h1{
+  font-size: 1.2vw !important;
+}
+
 /* Clients Form */
 
 .client-form-main{
