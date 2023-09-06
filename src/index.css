@@ -187,7 +187,7 @@ code {
 }
 
 .head4 h1{
-  font-size: 1.9vw;
+  font-size: 1.7vw;
 }
 
 .clients-todo{
@@ -229,7 +229,7 @@ code {
   display: none;
 }
 .clients-content-heading{
-  height: 15%;
+  height: 18%;
   width: 100%;
   /* border: 1px solid red; */
   background: linear-gradient(to right , #22c1c3,#fdbb2d);
