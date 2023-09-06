@@ -92,11 +92,11 @@ function Home() {
         </div>
         <div className='clients-table-heading'>
             <div className='head1'><h1>First Name</h1></div>
-            <div className='head1'><h1>Last Name</h1></div>
-            <div className='head1'><h1>D O B</h1></div>
-            <div className='head1'><h1>Sex</h1></div>
             <div className='head1'><h1>Office</h1></div>
             <div className='head1'><h1>Visa Type</h1></div>
+            <div className='head1'><h1>Status</h1></div>
+            <div className='head1'><h1>Responsibility</h1></div>
+            <div className='head1'><h1>Remarks</h1></div>
             <div className='head1 last'><h1>Case Status</h1></div>
         </div>
         <div className='clients-todo'>
@@ -105,11 +105,11 @@ function Home() {
             {toDo.map((arrow) => (
               <div className='clients-content-heading' key={arrow._id} >
                 <div className='head2'><h1 className='enjoy' onClick={() => {navigate(`/viewprofile/${arrow._id}`);}}>{arrow.firstName}</h1></div>
-                <div className='head2'><h1>{arrow.lastName}</h1></div>
-                <div className='head2'><h1>{arrow.dob}</h1></div>
-                <div className='head2'><h1>{arrow.sex}</h1></div>
                 <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
+                <div className='head2 head3'><h1>{arrow.status}</h1></div>
+                <div className='head2'><h1>{arrow.responsibility}</h1></div>
+                <div className='head2 head3'><h1>{arrow.remarks}</h1></div>
                 <div className='head2 last'>
                   <select
                       id="caseStatus"
@@ -132,11 +132,11 @@ function Home() {
             {doing.map((arrow) => (
               <div className='clients-content-heading' key={arrow._id}>
                 <div className='head2'><h1 className='enjoy' onClick={() => {navigate(`/viewprofile/${arrow._id}`);}}>{arrow.firstName}</h1></div>
-                <div className='head2'><h1>{arrow.lastName}</h1></div>
-                <div className='head2'><h1>{arrow.dob}</h1></div>
-                <div className='head2'><h1>{arrow.sex}</h1></div>
                 <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
+                <div className='head2 head3'><h1>{arrow.status}</h1></div>
+                <div className='head2'><h1>{arrow.responsibility}</h1></div>
+                <div className='head2 head3'><h1>{arrow.remarks}</h1></div>
                 <div className='head2 last'>
                   <select
                     id="caseStatus"
@@ -159,11 +159,11 @@ function Home() {
             {processing.map((arrow) => (
               <div className='clients-content-heading' key={arrow._id}>
                 <div className='head2'><h1 className='enjoy' onClick={() => {navigate(`/viewprofile/${arrow._id}`);}}>{arrow.firstName}</h1></div>
-                <div className='head2'><h1>{arrow.lastName}</h1></div>
-                <div className='head2'><h1>{arrow.dob}</h1></div>
-                <div className='head2'><h1>{arrow.sex}</h1></div>
                 <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
+                <div className='head2 head3'><h1>{arrow.status}</h1></div>
+                <div className='head2'><h1>{arrow.responsibility}</h1></div>
+                <div className='head2 head3'><h1>{arrow.remarks}</h1></div>
                 <div className='head2 last'>
                   <select
                         id="caseStatus"
@@ -186,11 +186,11 @@ function Home() {
             {done.map((arrow) => (
               <div className='clients-content-heading' key={arrow._id}>
                 <div className='head2'><h1 className='enjoy' onClick={() => {navigate(`/viewprofile/${arrow._id}`);}}>{arrow.firstName}</h1></div>
-                <div className='head2'><h1>{arrow.lastName}</h1></div>
-                <div className='head2'><h1>{arrow.dob}</h1></div>
-                <div className='head2'><h1>{arrow.sex}</h1></div>
                 <div className='head2 head3'><h1>{arrow.office}</h1></div>
                 <div className='head2'><h1>{arrow.visaType}</h1></div>
+                <div className='head2 head3'><h1>{arrow.status}</h1></div>
+                <div className='head2'><h1>{arrow.responsibility}</h1></div>
+                <div className='head2 head3'><h1>{arrow.remarks}</h1></div>
                 <div className='head2 last'>
                   <select
                         id="caseStatus"

@@ -37,6 +37,9 @@ function ViewProfile() {
     const [twelthSchoolAddress, setTwelthSchoolAddress] = useState("")
     const [twelthPassingDate, setTwelthPassingDate] = useState("")
     const [workExperience, setWorkExperience] = useState("")
+    const [status, setStatus] = useState("")
+    const [responsibility, setResponsibility] = useState("")
+    const [remarks, setRemarks] = useState("")
 
     const handleClick = async () => {
 
@@ -98,6 +101,9 @@ function ViewProfile() {
             setTwelthSchoolAddress(json.twelthSchoolAddress)
             setTwelthPassingDate(json.twelthPassingDate)
             setWorkExperience(json.workExperience)
+            setStatus(json.status)
+            setResponsibility(json.responsibility)
+            setRemarks(json.remarks)
         }
         }
         
@@ -352,14 +358,35 @@ function ViewProfile() {
                             <option value="done">Done</option>
                         </select>
                     </div>
+                    <div className='common'>
+                        <label>Status</label>
+                        <input 
+                            type="text"
+                            value={status}
+                        />
+                    </div>
                 </div>
                 <div className='part1 part2'>
+                    <div className='common'>
+                        <label>Responsibility</label>
+                        <input 
+                            type="text"
+                            value={responsibility}
+                        />
+                    </div>
                     <div className='textarea1'>
                         <label>Work Experience</label>
                         <textarea 
                             type="text"
                             value={workExperience}
                             className='desc-text text-desc'
+                        />
+                    </div>
+                    <div className='common'>
+                        <label>Remarks</label>
+                        <input 
+                            type="text"
+                            value={remarks}
                         />
                     </div>
                 </div>

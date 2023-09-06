@@ -34,11 +34,14 @@ function ClientsForm() {
     const [twelthSchoolAddress, setTwelthSchoolAddress] = useState("")
     const [twelthPassingDate, setTwelthPassingDate] = useState("")
     const [workExperience, setWorkExperience] = useState("")
+    const [status, setStatus] = useState("")
+    const [responsibility, setResponsibility] = useState("")
+    const [remarks, setRemarks] = useState("")
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const clients = {firstName,lastName,maritalStatus,visaType,office,caseStatus,dob,placeOfBirth,sex,address,city,state,pincode,phoneNumber,passportNumber,passportDateIssue,passportDateExpiry,tenthScore,tenthScoreSchema,tenthBoard,tenthSchoolName,tenthSchoolAddress,tenthPassingDate,twelthScore,twelthScoreSchema,twelthBoard,twelthSchoolName,twelthSchoolAddress,twelthPassingDate,workExperience}
+        const clients = {firstName,lastName,maritalStatus,visaType,office,caseStatus,dob,placeOfBirth,sex,address,city,state,pincode,phoneNumber,passportNumber,passportDateIssue,passportDateExpiry,tenthScore,tenthScoreSchema,tenthBoard,tenthSchoolName,tenthSchoolAddress,tenthPassingDate,twelthScore,twelthScoreSchema,twelthBoard,twelthSchoolName,twelthSchoolAddress,twelthPassingDate,workExperience,status,responsibility,remarks}
 
         const response = await fetch('https://client-list-backend-snse.onrender.com/api/cases', {
             method: 'POST',
@@ -84,6 +87,9 @@ function ClientsForm() {
             setTwelthSchoolAddress("")
             setTwelthPassingDate("")
             setWorkExperience("")
+            setStatus("")
+            setResponsibility("")
+            setRemarks("")
             console.log('New Client Added ',json)
             dispatch({type: 'CREATE_CLIENTS', payload: json})
         }
@@ -363,8 +369,24 @@ function ClientsForm() {
                             <option value="done">Done</option>
                         </select>
                     </div>
+                    <div className='common'>
+                        <label>Status</label>
+                        <input 
+                            type="text"
+                            onChange={(e) => setStatus(e.target.value)}
+                            value={status}
+                        />
+                    </div>
                 </div>
                 <div className='part1 part2'>
+                    <div className='common'>
+                        <label>Responsibility</label>
+                        <input 
+                            type="text"
+                            onChange={(e) => setResponsibility(e.target.value)}
+                            value={responsibility}
+                        />
+                    </div>
                     <div className='textarea1'>
                         <label>Work Experience</label>
                         <textarea 
@@ -372,6 +394,14 @@ function ClientsForm() {
                             onChange={(e) => setWorkExperience(e.target.value)}
                             value={workExperience}
                             className='desc-text text-desc'
+                        />
+                    </div>
+                    <div className='common'>
+                        <label>Remarks</label>
+                        <input 
+                            type="text"
+                            onChange={(e) => setRemarks(e.target.value)}
+                            value={remarks}
                         />
                     </div>
                 </div>
