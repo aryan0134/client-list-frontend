@@ -95,7 +95,7 @@ function Home() {
             <div className='head1'><h1>Office</h1></div>
             <div className='head1'><h1>Visa Type</h1></div>
             <div className='head1'><h1>Status</h1></div>
-            <div className='head1'><h1>Responsibility</h1></div>
+            <div className='head1 head4'><h1>Responsibility</h1></div>
             <div className='head1'><h1>Remarks</h1></div>
             <div className='head1 last'><h1>Case Status</h1></div>
         </div>

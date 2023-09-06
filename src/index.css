@@ -186,6 +186,10 @@ code {
   border-right: none !important;
 }
 
+.head4 h1{
+  font-size: 1.9vw;
+}
+
 .clients-todo{
   min-height: 60%;
   width: 98%;
