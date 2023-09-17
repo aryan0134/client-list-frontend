@@ -247,13 +247,14 @@ code {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   /* cursor: pointer; */
 }
 .nani{
   height: 27%;
   width: 98%;
   border-radius: 0px;
+  margin-left: 10px;
 }
 .cat{
   font-size: 1.2vw;

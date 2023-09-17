@@ -18,7 +18,7 @@ function ToDoList() {
     setCounter(counter=>counter+1)
     
     // dispatch({type: 'SET_USER', payload: value})
-    // navigate('/todomain')
+    navigate('/todomain')
   }
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function ToDoList() {
 
   return (
     <div className='HomePage'>
-      <div className='img-Home' onClick={()=>{navigate('/todomain');}}>
+      <div className='img-Home'>
         <img src={todoimg} />
       </div>
         <select
