@@ -10,7 +10,7 @@ function ToDoMain() {
     const [userList,setUserList] = useState([])
     const [doing,setDoing] = useState([])
     const [done,setDone] = useState([])
-    const [caseStatus,setCaseStatus] = useState("to do")
+    const [status,setStatus] = useState("to do")
     const [counter,setCounter] = useState(0)
 
     const { toDo ,dispatch } = useToDoContext()
@@ -18,7 +18,7 @@ function ToDoMain() {
 
     const handleStatusChange = async (e,arrow) => {
         const newStatus = e.target.value;
-        setCaseStatus(newStatus);
+        setStatus(newStatus);
 
         // Assuming you have an API endpoint like "/api/updateClientStatus" on your backend
         try {
