@@ -68,13 +68,13 @@ function ToDoMain() {
         const filteredusertasks = toDo.filter((task) => task.assignee === user);
         setUserList(filteredusertasks)
         // Filter clients with status 'to do' whenever clients state changes
-        const filteredToDoClients = userList.filter((client) => client.caseStatus === 'to do');
+        const filteredToDoClients = userList.filter((client) => client.status === 'to do');
         setToDoo(filteredToDoClients);
 
-        const filteredDoingClients = userList.filter((client) => client.caseStatus === 'doing');
+        const filteredDoingClients = userList.filter((client) => client.status === 'doing');
         setDoing(filteredDoingClients);
 
-        const filteredDoneClients = userList.filter((client) => client.caseStatus === 'done');
+        const filteredDoneClients = userList.filter((client) => client.status === 'done');
         setDone(filteredDoneClients);
 
         console.log(userList, user ,"todoclients")
