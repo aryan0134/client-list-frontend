@@ -176,9 +176,17 @@ code {
   align-items: center;
   justify-content: center;
 }
+.head5{
+  width: 40%;
+  height: 100%;
+  border-right: 2px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .head1 h1{
   margin:0;
-  font-size: 2.1vw;
+  font-size: 1.8vw;
   font-family: 'Poppins';
   font-weight:600;
 }
@@ -393,13 +401,35 @@ form button{
 
 .HomePage{
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   height: 80vh;
   width: 100vw;
-  background-color: black;
+  /* background-color: black; */
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.WorkInProgress{
+.HomePage select{
+  height: 10%;
+  width: 20%;
+  font-size: 2vw;
+  z-index: 1;
+}
+.img-Home{
+  height: 95%;
+  width: 50%;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.img-Home img{
+  height: 100%;
+  width: 100%;
+}
+/* .WorkInProgress{
   display: flex;
   position: relative;
   height: 100%;
@@ -426,4 +456,184 @@ form button{
 }
 .title h1{
   margin: 0;
+} */
+
+/* To Do List Main */
+.assigntaskimg{
+  /* border: 1px solid red; */
+}
+.assigntaskimg img{
+  border-radius: 0px;
+}
+
+/* Task Form */
+.my-task-main{
+  display: grid;
+  height: 80vh;
+  width: 100vw;
+  grid-template-columns: 3fr 1fr;
+  gap: 0px;
+}
+.my-task-details-main{
+  /* border: 1px solid red */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.my-task-details-main::-webkit-scrollbar{
+  display: none;
+}
+.task-details-container{
+  height: 30%;
+  width: 95%;
+  border: 5px solid #1aac83;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* border-top: none; */
+  border-left: none;
+  margin-left: 10px;
+  box-shadow: 10px 10px 5px black;
+  background-color: #E2E5DE;
+}
+.task1{
+  height: 50%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  border-bottom: 3px solid white;
+}
+.task1-name{
+  height: 100%;
+  width: 90%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid white ;
+}
+.task1-name p{
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 1.5vw;
+  margin-left: 5px;
+}
+.task2{
+  height: 50%;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+}
+.task2-division{
+  height: 97%;
+  width: 25%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid white;
+  
+}
+.task2-division h2{
+  font-family: "Poppins";
+  font-size: 2vw;
+  font-weight: 600;
+}
+.my-task-form{
+  /* border: 1px solid green; */
+  height: 100%;
+  background-color: #dbd3d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-task-form form{
+  height: 98%;
+  width: 98%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-task-form form div{
+  /* border: 1px solid red; */
+}
+.taskname{
+  width: 80%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.taskname label{
+  font-family: "Poppins";
+  font-size: 1.8vw;
+}
+.taskname textarea{
+  background-color: white;
+  border: 3px solid black;
+  height: 80% !important;
+  color: black;
+  font-size: 1.2vw;
+}
+.duedate{
+  width: 80%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.duedate label{
+  font-family: "Poppins";
+  font-size: 1.8vw;
+}
+.duedate input{
+  height: 50%;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  font-size: 2vw;
+}
+.form-dropdowns{
+  width: 80%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-dropdowns label{
+  font-family: "Poppins";
+  font-size: 1.8vw;
+}
+.form-dropdowns select{
+  border: 3px solid white;
+}
+.baba{
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-buttons{
+  height: 10%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.form-buttons button{
+  height: 80%;
+  width: 100%;
+  background-color: black;
+  border: 3px solid white;
+  margin: 0;
+
 }
