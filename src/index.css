@@ -425,6 +425,20 @@ form button{
   font-size: 2vw;
   z-index: 1;
 }
+.HomePage button{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  margin: auto;
+  height: 10%;
+  width: 20%;
+  background-color: black;
+  color: silver;
+  font-size: 2.5vw;
+  border: 5px solid silver;
+  cursor: pointer;
+}
 .img-Home{
   height: 95%;
   width: 50%;
