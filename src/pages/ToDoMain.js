@@ -24,7 +24,7 @@ function ToDoMain() {
         try {
         const response = await fetch(`https://client-list-backend-snse.onrender.com/api/todo/${arrow._id}`, {
             method: 'PATCH',
-            body: JSON.stringify({caseStatus: newStatus}),
+            body: JSON.stringify({status: newStatus}),
             headers: {
                 'Content-Type': 'application/json',
             }      
@@ -109,7 +109,7 @@ function ToDoMain() {
                         <select
                             id="Status"
                             onChange={(e) => handleStatusChange(e,arrow)}
-                            value={arrow.Status}
+                            value={arrow.status}
                             >
                             <option value="to do">To Do</option>
                             <option value="doing">Doing</option>
@@ -134,7 +134,7 @@ function ToDoMain() {
                 <select
                     id="Status"
                     onChange={(e) => handleStatusChange(e,arrow)}
-                    value={arrow.Status}
+                    value={arrow.status}
                     >
                     <option value="to do">To Do</option>
                     <option value="doing">Doing</option>
@@ -159,7 +159,7 @@ function ToDoMain() {
                 <select
                     id="Status"
                     onChange={(e) => handleStatusChange(e,arrow)}
-                    value={arrow.Status}
+                    value={arrow.status}
                     >
                     <option value="to do">To Do</option>
                     <option value="doing">Doing</option>
