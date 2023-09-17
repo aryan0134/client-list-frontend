@@ -101,9 +101,9 @@ function ToDoMain() {
                     {toDoo.map((arrow) => (
                     <div className='clients-content-heading' key={arrow._id} >
                         <div className='head5'><h1 className='enjoy' >{arrow.taskName}</h1></div>
-                        <div className='head2 head3'><h1>{arrow.assignee}</h1></div>
+                        <div className='head2'><h1>{arrow.assignee}</h1></div>
                         <div className='head2'><h1>{arrow.assignedBy}</h1></div>
-                        <div className='head2 head3'><h1>{arrow.dueDate}</h1></div>
+                        <div className='head2'><h1>{arrow.dueDate}</h1></div>
                         <div className='head2'><h1>{arrow.priority}</h1></div>
                         <div className='head2 last'>
                         <select
@@ -126,9 +126,9 @@ function ToDoMain() {
                 {doing.map((arrow) => (
                 <div className='clients-content-heading' key={arrow._id} >
                 <div className='head5'><h1 className='enjoy' >{arrow.taskName}</h1></div>
-                <div className='head2 head3'><h1>{arrow.assignee}</h1></div>
+                <div className='head2'><h1>{arrow.assignee}</h1></div>
                 <div className='head2'><h1>{arrow.assignedBy}</h1></div>
-                <div className='head2 head3'><h1>{arrow.dueDate}</h1></div>
+                <div className='head2'><h1>{arrow.dueDate}</h1></div>
                 <div className='head2'><h1>{arrow.priority}</h1></div>
                 <div className='head2 last'>
                 <select
@@ -151,9 +151,9 @@ function ToDoMain() {
                 {done.map((arrow) => (
                 <div className='clients-content-heading' key={arrow._id} >
                 <div className='head5'><h1 className='enjoy' >{arrow.taskName}</h1></div>
-                <div className='head2 head3'><h1>{arrow.assignee}</h1></div>
+                <div className='head2'><h1>{arrow.assignee}</h1></div>
                 <div className='head2'><h1>{arrow.assignedBy}</h1></div>
-                <div className='head2 head3'><h1>{arrow.dueDate}</h1></div>
+                <div className='head2'><h1>{arrow.dueDate}</h1></div>
                 <div className='head2'><h1>{arrow.priority}</h1></div>
                 <div className='head2 last'>
                 <select
