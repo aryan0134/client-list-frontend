@@ -77,7 +77,7 @@ function ToDoMain() {
         const filteredDoneClients = userList.filter((client) => client.caseStatus === 'done');
         setDone(filteredDoneClients);
 
-        console.log(toDo,"todoclients")
+        console.log(userList,"todoclients")
     }, [toDo,counter]);
     return (
         <div className='home-main'>
