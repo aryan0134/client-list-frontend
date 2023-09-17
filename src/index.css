@@ -513,6 +513,12 @@ form button{
   display: flex;
   border-bottom: 3px solid white;
 }
+.task1-edit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .task1-name{
   height: 100%;
   width: 90%;

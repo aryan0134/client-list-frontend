@@ -1,6 +1,8 @@
 import React, { useState , useEffect} from 'react'
 import { useUserContext } from '../hooks/useUserContext'
 import { useToDoContext } from '../hooks/useToDoContext'
+import {BiEdit} from 'react-icons/bi'
+import {AiFillDelete} from 'react-icons/ai'
 
 function TaskForm() {
   const { user } = useUserContext()
@@ -58,7 +60,7 @@ function TaskForm() {
           <div className='task-details-container'>
             <div className='task1'>
               <div className='task1-name'><p>{arrow.taskName}</p></div>
-              <div className='task1-edit'></div>
+              <div className='task1-edit'><BiEdit /> <AiFillDelete /></div>
             </div>
             <div className='task2'>
               <div className='task2-division'><h2>{arrow.assignee}</h2></div>
