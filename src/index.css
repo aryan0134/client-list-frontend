@@ -251,6 +251,8 @@ code {
 }
 .nani{
   height: 27%;
+  width: 98%;
+  border-radius: 0px;
 }
 .cat{
   font-size: 1.2vw;
