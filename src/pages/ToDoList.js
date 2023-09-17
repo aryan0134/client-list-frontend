@@ -15,12 +15,12 @@ function ToDoList() {
     const newStatus = e.target.value;
     setValue(newStatus);
     dispatch({type: 'SET_USER', payload: value})
-    navigate('/todomain')
+    // navigate('/todomain')
   }
 
   return (
     <div className='HomePage'>
-      <div className='img-Home'>
+      <div className='img-Home' onClick={()=>{navigate('/todomain');}}>
         <img src={todoimg} />
       </div>
         <select
