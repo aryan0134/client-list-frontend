@@ -14,7 +14,11 @@ function ToDoList() {
   const handleStatusChange = async (e) => {
     const newStatus = e.target.value;
     setValue(newStatus);
-    dispatch({type: 'SET_USER', payload: value})
+    if (value){
+      dispatch({type: 'SET_USER', payload: value})
+      console.log( value, "user is online")
+    }
+    // dispatch({type: 'SET_USER', payload: value})
     // navigate('/todomain')
   }
 
