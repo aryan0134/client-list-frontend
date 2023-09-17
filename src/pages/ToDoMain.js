@@ -99,8 +99,8 @@ function ToDoMain() {
                 <div className='clients-todo-heading'><h1>TO DO</h1></div>
                 <div className='clients-container'>
                     {toDoo.map((arrow) => (
-                    <div className='clients-content-heading' key={arrow._id} >
-                        <div className='head5'><h1 className='enjoy' >{arrow.taskName}</h1></div>
+                    <div className='clients-content-heading nani' key={arrow._id} >
+                        <div className='head5'><h1 className='enjoy cat' >{arrow.taskName}</h1></div>
                         <div className='head2'><h1>{arrow.assignee}</h1></div>
                         <div className='head2'><h1>{arrow.assignedBy}</h1></div>
                         <div className='head2'><h1>{arrow.dueDate}</h1></div>
@@ -124,8 +124,8 @@ function ToDoMain() {
             <div className='clients-todo-heading'><h1>DOING</h1></div>
             <div className='clients-container'>
                 {doing.map((arrow) => (
-                <div className='clients-content-heading' key={arrow._id} >
-                <div className='head5'><h1 className='enjoy' >{arrow.taskName}</h1></div>
+                <div className='clients-content-heading nani' key={arrow._id} >
+                <div className='head5'><h1 className='enjoy cat' >{arrow.taskName}</h1></div>
                 <div className='head2'><h1>{arrow.assignee}</h1></div>
                 <div className='head2'><h1>{arrow.assignedBy}</h1></div>
                 <div className='head2'><h1>{arrow.dueDate}</h1></div>
@@ -149,8 +149,8 @@ function ToDoMain() {
             <div className='clients-todo-heading'><h1>DONE</h1></div>
             <div className='clients-container'>
                 {done.map((arrow) => (
-                <div className='clients-content-heading' key={arrow._id} >
-                <div className='head5'><h1 className='enjoy' >{arrow.taskName}</h1></div>
+                <div className='clients-content-heading nani' key={arrow._id} >
+                <div className='head5'><h1 className='enjoy cat' >{arrow.taskName}</h1></div>
                 <div className='head2'><h1>{arrow.assignee}</h1></div>
                 <div className='head2'><h1>{arrow.assignedBy}</h1></div>
                 <div className='head2'><h1>{arrow.dueDate}</h1></div>
