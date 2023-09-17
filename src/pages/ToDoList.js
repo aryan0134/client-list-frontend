@@ -14,7 +14,7 @@ function ToDoList() {
   const handleStatusChange = async (e) => {
     const newStatus = e.target.value;
     setValue(newStatus);
-    dispatch({type: 'SET_USER', payload: newStatus})
+    dispatch({type: 'SET_USER', payload: value})
     navigate('/todomain')
   }
 
