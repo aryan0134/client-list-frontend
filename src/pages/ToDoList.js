@@ -18,7 +18,7 @@ function ToDoList() {
     setCounter(counter=>counter+1)
     
     // dispatch({type: 'SET_USER', payload: value})
-    navigate('/todomain')
+    // navigate('/todomain')
   }
 
   useEffect(() => {
@@ -45,6 +45,7 @@ function ToDoList() {
                     <option value="Ayusha">Ayusha</option>
                     <option value="Raman">Raman</option>
                   </select>
+        <button onClick={()=>{navigate('/todomain');}}>Proceed</button>
     </div>
   )
 }
