@@ -53,6 +53,28 @@ function TaskForm() {
     }
 }
 
+const handleClick = async (arrow) => {
+
+
+  const response = await fetch(`https://client-list-backend-snse.onrender.com/api/todo/${arrow._id}`, {
+  method: 'DELETE'
+  })
+  const json = await response.json()
+
+  if(response.ok){
+  dispatch({type: 'DELETE_TODO', payload: json})
+  }
+
+}
+const deletePractice = (arrow) => {
+  const confirmBox = window.confirm(
+    "Do you really want to delete "
+  )
+  if (confirmBox === true) {
+    handleClick(arrow)
+  }
+}
+
   return (
     <div className='my-task-main'>
       <div className='my-task-details-main'>
@@ -60,7 +82,7 @@ function TaskForm() {
           <div className='task-details-container'>
             <div className='task1'>
               <div className='task1-name'><p>{arrow.taskName}</p></div>
-              <div className='task1-edit'><BiEdit /> <AiFillDelete /></div>
+              <div className='task1-edit'><BiEdit /> <AiFillDelete onClick={deletePractice(arrow)}/></div>
             </div>
             <div className='task2'>
               <div className='task2-division'><h2>{arrow.assignee}</h2></div>
