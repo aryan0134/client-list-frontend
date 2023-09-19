@@ -3,9 +3,11 @@ import { useUserContext } from '../hooks/useUserContext'
 import { useToDoContext } from '../hooks/useToDoContext'
 import {BiEdit} from 'react-icons/bi'
 import {AiFillDelete} from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
 
 function TaskForm() {
   const { user } = useUserContext()
+  const navigate = useNavigate()
   const { toDo ,dispatch } = useToDoContext()
   const [userList,setUserList] = useState([])
   const [taskName, setTaskName] = useState("")
@@ -68,6 +70,7 @@ const handleEdit = async (e) => {
       setEditPriority("")
       setEditStatus("")
       console.log('To DO Edited ',json)
+      navigate('/todo')
     }
 }
 
@@ -107,6 +110,7 @@ const handleEdit = async (e) => {
         setStatus("")
         console.log('New Task Added ',json)
         dispatch({type: 'CREATE_TODO', payload: json})
+        
     }
 }
 
@@ -139,7 +143,7 @@ const deletePractice = (arrow) => {
           <div className='task-details-container'>
             <div className='task1'>
               <div className='task1-name'><p>{arrow.taskName}</p></div>
-              <div className='task1-edit'><div style={{cursor : "pointer"}} onClick={()=> {setId(arrow._id); setEditCounter(editCounter=>editCounter+1);}}><BiEdit /></div> <div style={{color: "red", cursor : "pointer"}} onClick={()=>{deletePractice(arrow);}}><AiFillDelete /></div></div>
+              <div className='task1-edit'><div style={{cursor : "pointer"}} onClick={()=> {setId(arrow._id); setEditCounter(editCounter=>editCounter+1); setEdit(1);}}><BiEdit /></div> <div style={{color: "red", cursor : "pointer"}} onClick={()=>{deletePractice(arrow);}}><AiFillDelete /></div></div>
             </div>
             <div className='task2'>
               <div className='task2-division'><h2>{arrow.assignee}</h2></div>
@@ -217,7 +221,7 @@ const deletePractice = (arrow) => {
           </div>
         </form>
       </div>
-      {edit == 0 ? 
+      {edit == 1 ? 
         <div className='edit-main'>
           <form onSubmit={handleEdit}>
               <div className='baba'>
