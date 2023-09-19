@@ -78,7 +78,7 @@ function ToDoMain() {
         setDone(filteredDoneClients);
 
         console.log(userList, user ,"todoclients")
-    }, [toDo,counter]);
+    }, [toDo]);
     return (
         <div className='home-main'>
             <div className='home-welcome'>
