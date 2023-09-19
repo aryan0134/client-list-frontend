@@ -12,6 +12,7 @@ function ToDoMain() {
     const [done,setDone] = useState([])
     const [status,setStatus] = useState("to do")
     const [counter,setCounter] = useState(0)
+    const [recounter,setReCounter] = useState(0)
 
     const { toDo ,dispatch } = useToDoContext()
     const { user } = useUserContext()
@@ -56,6 +57,7 @@ function ToDoMain() {
         if(response.ok){
             dispatch({type: 'SET_TODO', payload: json})
             console.log(toDo)
+            setReCounter(recounter=>recounter+1)
         }
         }
 
@@ -78,7 +80,7 @@ function ToDoMain() {
         setDone(filteredDoneClients);
 
         console.log(userList, user ,"todoclients")
-    }, [toDo]);
+    }, [recounter]);
     return (
         <div className='home-main'>
             <div className='home-welcome'>
