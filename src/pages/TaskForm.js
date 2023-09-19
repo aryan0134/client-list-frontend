@@ -82,7 +82,7 @@ const deletePractice = (arrow) => {
           <div className='task-details-container'>
             <div className='task1'>
               <div className='task1-name'><p>{arrow.taskName}</p></div>
-              <div className='task1-edit'><BiEdit /> <AiFillDelete onClick={deletePractice(arrow)}/></div>
+              <div className='task1-edit'><div><BiEdit /></div> <div onClick={deletePractice(arrow)}><AiFillDelete /></div></div>
             </div>
             <div className='task2'>
               <div className='task2-division'><h2>{arrow.assignee}</h2></div>
